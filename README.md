@@ -1,4 +1,7 @@
+![example workflow](https://github.com/PerCollECT/CameraCopse/actions/workflows/validate-json.yml/badge.svg)
+
 # PerCollECT - [CameraCopse](https://percollect.github.io/CameraCopse/)
+
 ## Perception Sensor Collaborative Effect and Cause Tree (PerCollECT) - Radar Tree
 
 This tree facilitates the analysis of cause and effect chain in the signal processing of automotive camera sensors. Visualization of the tree can be found under [https://percollect.github.io/CameraCopse/](https://percollect.github.io/CameraCopse/).
