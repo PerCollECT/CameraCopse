@@ -1,0 +1,11 @@
+[
+  {
+    "id": "0",
+    "parentIds": [],
+    "title": "False negative in object list",
+    "decomBlock": "Object identification",
+    "description": "An object present in ground truth is not detected by the sensor" ,
+    "references": "",
+    "nodeType": "effect"
+  }
+]
