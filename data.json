@@ -7,5 +7,293 @@
     "description": "An object present in ground truth is not detected by the sensor" ,
     "references": "",
     "nodeType": "effect"
+  },
+  {
+    "id": "1",
+    "parentIds": ["2"],
+    "title": "Reflectance of objects",
+    "decomBlock": "Signal propagation",
+    "description": "",
+    "references": "[2, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706; 707]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "2",
+    "parentIds": ["27", "28"],
+    "title": "Reflective object is closer to observer than expected",
+    "decomBlock": "Signal propagation",
+    "description": "",
+    "references": "[27, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706; 707], [28, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "3",
+    "parentIds": [],
+    "title": "Overexposure",
+    "decomBlock": "Reception",
+    "description": "",
+    "references": "",
+    "nodeType": "effect"
+  },
+  {
+    "id": "4",
+    "parentIds": ["5"],
+    "title": "Wave properties of light sources",
+    "decomBlock": "Emission",
+    "description": "",
+    "references": "[5, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 161]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "5",
+    "parentIds": ["7"],
+    "title": "Light of some source is more polarized or coherent than expected",
+    "decomBlock": "Emission",
+    "description": "",
+    "references": "[7, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 161]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "6",
+    "parentIds": ["7"],
+    "title": "Observation with polarization filters",
+    "decomBlock": "Reception",
+    "description": "",
+    "references": "[7, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 161]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "7",
+    "parentIds": ["8"],
+    "title": "Extinction of light intensity in reception unit",
+    "decomBlock": "Reception",
+    "description": "",
+    "references": "[8, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 161]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "8",
+    "parentIds": [],
+    "title": "Underexposure",
+    "decomBlock": "Reception",
+    "description": "",
+    "references": "[]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "9",
+    "parentIds": ["10"],
+    "title": "Viewing position of observer-optomechanics",
+    "decomBlock": "Reception",
+    "description": "",
+    "references": "[10, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 904]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "10",
+    "parentIds": ["12"],
+    "title": "Observer moves faster than expected",
+    "decomBlock": "Reception",
+    "description": "",
+    "references": "[12, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 904]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "11",
+    "parentIds": ["12"],
+    "title": "Exposure time",
+    "decomBlock": "Reception",
+    "description": "",
+    "references": "[12, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 904]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "12",
+    "parentIds": ["13"],
+    "title": "Motion blur",
+    "decomBlock": "Detection identification",
+    "description": "",
+    "references": "[13, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 904]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "13",
+    "parentIds": [],
+    "title": "Misdetections of objects",
+    "decomBlock": "Object identification",
+    "description": "",
+    "references": "",
+    "nodeType": "effect"
+  },
+  {
+    "id": "14",
+    "parentIds": ["15"],
+    "title": "Geometry of lenses in observer-optomechanics",
+    "decomBlock": "Reception",
+    "description": "",
+    "references": "[15, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 982]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "15",
+    "parentIds": ["16"],
+    "title": "Strongly curved lens surfaces",
+    "decomBlock": "Reception",
+    "description": "",
+    "references": "[16, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 982]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "16",
+    "parentIds": ["17"],
+    "title": "Distortion: barrel or pincushion",
+    "decomBlock": "Detection identification",
+    "description": "",
+    "references": "[17, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 982]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "17",
+    "parentIds": [],
+    "title": "Distortion: scene geometry misinterpreted",
+    "decomBlock": "Object identification",
+    "description": "",
+    "references": "[]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "18",
+    "parentIds": ["19"],
+    "title": "Spectrum recieved by observer-optomechanics",
+    "decomBlock": "Reception",
+    "description": "",
+    "references": "[19, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "19",
+    "parentIds": ["20"],
+    "title": "Different parts of spectrum are transmitted to different locations",
+    "decomBlock": "Reception",
+    "description": "",
+    "references": "[20, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "20",
+    "parentIds": ["21"],
+    "title": "Chromatic aberration (achromatism): coloured edges",
+    "decomBlock": "Detection identification",
+    "description": "",
+    "references": "[21, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "21",
+    "parentIds": [],
+    "title": "Edge detection and segmentation is hampered",
+    "decomBlock": "Detection identification",
+    "description": "",
+    "references": "",
+    "nodeType": "effect"
+  },
+  {
+    "id": "22",
+    "parentIds": ["23"],
+    "title": "Quality of observer-electronics",
+    "decomBlock": "Reception",
+    "description": "",
+    "references": "[23, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 1219]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "23",
+    "parentIds": ["24"],
+    "title": "More (thermal) pixel noise than expected",
+    "decomBlock": "Reception",
+    "description": "",
+    "references": "[24, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 1219]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "24",
+    "parentIds": ["25"],
+    "title": "Less contrast",
+    "decomBlock": "Detection identification",
+    "description": "",
+    "references": "[25, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 1219]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "25",
+    "parentIds": [],
+    "title": "Small image details not detected",
+    "decomBlock": "Detection identification",
+    "description": "",
+    "references": "",
+    "nodeType": "effect"
+  },
+    {
+    "id": "26",
+    "parentIds": ["2"],
+    "title": "Distance between reflective object and observer",
+    "decomBlock": "Signal propagation",
+    "description": "",
+    "references": "[2, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706; 707]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "27",
+    "parentIds": ["29", "3"],
+    "title": "Increasing brightness of reflection",
+    "decomBlock": "Signal propagation",
+    "description": "",
+    "references": "[29, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706], [3, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 707]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "28",
+    "parentIds": ["29"],
+    "title": "Increasing size of reflection",
+    "decomBlock": "Signal propagation",
+    "description": "",
+    "references": "[29, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "29",
+    "parentIds": [],
+    "title": "False positive: mirrored scene taken for real",
+    "decomBlock": "Object identification",
+    "description": "",
+    "references": "",
+    "nodeType": "effect"
+  },
+  {
+    "id": "30",
+    "parentIds": ["31"],
+    "title": "Spatial resolution of pixels in observer-electronics",
+    "decomBlock": "Reception",
+    "description": "",
+    "references": "[31, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 1175]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "31",
+    "parentIds": ["32"],
+    "title": "Pixel size/position changes regularly over the view",
+    "decomBlock": "Reception",
+    "description": "",
+    "references": "[32, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 1175]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "32",
+    "parentIds": ["16"],
+    "title": "Different parts of the sensor sample the same scene area in different image area sizes",
+    "decomBlock": "Pre-processing",
+    "description": "",
+    "references": "[16, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 1175]",
+    "nodeType": "effect"
   }
 ]
