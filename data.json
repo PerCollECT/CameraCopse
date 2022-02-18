@@ -20,7 +20,7 @@
   {
     "id": "2",
     "parentIds": ["27", "28"],
-    "title": "Reflective object is closer to observer than expected",
+    "title": "Reflective object close to observer",
     "decomBlock": "Signal propagation",
     "description": "",
     "references": "[27, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706; 707], [28, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706]",
@@ -164,11 +164,11 @@
   {
     "id": "18",
     "parentIds": ["19"],
-    "title": "Spectrum recieved by observer-optomechanics",
+    "title": "Spectrum of observer-optomechanics",
     "decomBlock": "Reception",
     "description": "",
     "references": "[19, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954]",
-    "nodeType": "systemIndependent"
+    "nodeType": "designParameter"
   },
   {
     "id": "19",
@@ -177,21 +177,21 @@
     "decomBlock": "Reception",
     "description": "",
     "references": "[20, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954]",
-    "nodeType": "systemIndependent"
+    "nodeType": "effect"
   },
   {
     "id": "20",
-    "parentIds": ["21"],
-    "title": "Chromatic aberration (achromatism): coloured edges",
-    "decomBlock": "Detection identification",
+    "parentIds": ["35"],
+    "title": "Chromatic aberration (achromatism)",
+    "decomBlock": "Reception",
     "description": "",
-    "references": "[21, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954]",
+    "references": "[35, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954]",
     "nodeType": "effect"
   },
   {
     "id": "21",
     "parentIds": [],
-    "title": "Edge detection and segmentation is hampered",
+    "title": "Edge detection is hampered",
     "decomBlock": "Detection identification",
     "description": "",
     "references": "",
@@ -209,17 +209,17 @@
   {
     "id": "23",
     "parentIds": ["24"],
-    "title": "More (thermal) pixel noise than expected",
+    "title": "Thermal pixel noise",
     "decomBlock": "Reception",
     "description": "",
     "references": "[24, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 1219]",
-    "nodeType": "systemIndependent"
+    "nodeType": "effect"
   },
   {
     "id": "24",
     "parentIds": ["25"],
     "title": "Less contrast",
-    "decomBlock": "Detection identification",
+    "decomBlock": "Reception",
     "description": "",
     "references": "[25, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 1219]",
     "nodeType": "effect"
@@ -262,11 +262,11 @@
   },
   {
     "id": "29",
-    "parentIds": [],
-    "title": "False positive: mirrored scene taken for real",
-    "decomBlock": "Object identification",
+    "parentIds": ["33"],
+    "title": "Mirrored scene",
+    "decomBlock": "Signal propagation",
     "description": "",
-    "references": "",
+    "references": "[33, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706]",
     "nodeType": "effect"
   },
   {
@@ -295,5 +295,41 @@
     "description": "",
     "references": "[16, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 1175]",
     "nodeType": "effect"
-  }
+  },
+  {
+    "id": "33",
+    "parentIds": [],
+    "title": "False positive object",
+    "decomBlock": "Object identification",
+    "description": "",
+    "references": "",
+    "nodeType": "effect"
+  },
+  {
+    "id": "34",
+    "parentIds": ["19"],
+    "title": "Spectrum of incoming radiation",
+    "decomBlock": "Signal propagation",
+    "description": "",
+    "references": "[19, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954]",
+    "nodeType": "systemIndependent"
+  },
+  {
+  "id": "35",
+  "parentIds": ["21", "36"],
+  "title": "Coloured edges",
+  "decomBlock": "Detection identification",
+  "description": "",
+  "references": "[21, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954], [36, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954]",
+  "nodeType": "effect"
+  },
+  {
+    "id": "36",
+    "parentIds": [],
+    "title": "Segmentation is hampered",
+    "decomBlock": "Detection identification",
+    "description": "",
+    "references": "",
+    "nodeType": "effect"
+    }
 ]
