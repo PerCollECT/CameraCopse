@@ -23,7 +23,7 @@
     "title": "Reflective object close to observer",
     "decomBlock": "Signal propagation",
     "description": "",
-    "references": "[27, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706; 707], [28, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706]",
+    "references": "[27, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706; 707] [28, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706]",
     "nodeType": "systemIndependent"
   },
   {
@@ -131,16 +131,16 @@
     "title": "Geometry of lenses in observer-optomechanics",
     "decomBlock": "Reception",
     "description": "",
-    "references": "[15, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 982]",
+    "references": "[15, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 982; 983]",
     "nodeType": "designParameter"
   },
   {
     "id": "15",
-    "parentIds": ["16"],
+    "parentIds": ["16", "37"],
     "title": "Strongly curved lens surfaces",
     "decomBlock": "Reception",
     "description": "",
-    "references": "[16, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 982]",
+    "references": "[16, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 982] [37, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 983]",
     "nodeType": "designParameter"
   },
   {
@@ -248,7 +248,7 @@
     "title": "Increasing brightness of reflection",
     "decomBlock": "Signal propagation",
     "description": "",
-    "references": "[29, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706], [3, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 707]",
+    "references": "[29, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706] [3, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 707]",
     "nodeType": "effect"
   },
   {
@@ -320,7 +320,7 @@
   "title": "Coloured edges",
   "decomBlock": "Detection identification",
   "description": "",
-  "references": "[21, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954], [36, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954]",
+  "references": "[21, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954] [36, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954]",
   "nodeType": "effect"
   },
   {
@@ -331,5 +331,59 @@
     "description": "",
     "references": "",
     "nodeType": "effect"
-    }
+  },
+  {
+    "id": "37",
+    "parentIds": [],
+    "title": "Vignetting: image darkening towards the edges",
+    "decomBlock": "Detection identification",
+    "description": "",
+    "references": "",
+    "nodeType": "effect"
+  },
+  {
+    "id": "38",
+    "parentIds": ["39"],
+    "title": "Particles in medium",
+    "decomBlock": "Signal propagation",
+    "description": "",
+    "references": "[39, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 273]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "39",
+    "parentIds": ["40"],
+    "title": "Slow movement of particles",
+    "decomBlock": "Signal propagation",
+    "description": "",
+    "references": "[40, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 273]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "40",
+    "parentIds": ["42"],
+    "title": "Particle outline shapes are sharply resolved (instead of being blurred)",
+    "decomBlock": "Reception",
+    "description": "",
+    "references": "[42, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 273]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "41",
+    "parentIds": ["42"],
+    "title": "Temporal averaging",
+    "decomBlock": "Pre-processing",
+    "description": "",
+    "references": "[42, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 273]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "42",
+    "parentIds": [],
+    "title": "Artefacts",
+    "decomBlock": "Detection identification",
+    "description": "",
+    "references": "[42, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 273]",
+    "nodeType": "effect"
+  }
 ]
