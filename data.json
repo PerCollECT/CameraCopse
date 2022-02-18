@@ -13,7 +13,7 @@
     "parentIds": ["2"],
     "title": "Reflectance of objects",
     "decomBlock": "Signal propagation",
-    "description": "",
+    "description": "Reflectance being a measure of the capability to reflect portions of incoming light while other portions are absorbed and/or transmitted.",
     "references": "[2, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706; 707]",
     "nodeType": "systemIndependent"
   },
@@ -22,7 +22,7 @@
     "parentIds": ["27", "28"],
     "title": "Reflective object close to observer",
     "decomBlock": "Signal propagation",
-    "description": "",
+    "description": "Short mutual distance between reflective object and observer.",
     "references": "[27, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706; 707] [28, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706]",
     "nodeType": "systemIndependent"
   },
@@ -40,7 +40,7 @@
     "parentIds": ["5"],
     "title": "Wave properties of light sources",
     "decomBlock": "Emission",
-    "description": "",
+    "description": "Light which is emitted by a light source is being considered an electromagnetic wave, respectively a range of merged electromagnetic waves. Thus, it is being determined by corresponding wave properties such as wavelength, amplitude, phase, polarization and direction of propagation.",
     "references": "[5, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 161]",
     "nodeType": "systemIndependent"
   },
@@ -58,8 +58,8 @@
     "parentIds": ["7"],
     "title": "Observation with polarization filters",
     "decomBlock": "Reception",
-    "description": "",
-    "references": "[7, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 161]",
+    "description": "Polarization filters being used to eliminate amplitudes of passing light, but only those whose angular directions deviate from a specific angle of the considered filter.",
+    "references": "[7, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 161, Directional elimination of amplitudes leading to decreasing energy of passing light. Consequently, light intensity is being reduced.]",
     "nodeType": "designParameter"
   },
   {
@@ -67,7 +67,7 @@
     "parentIds": ["8"],
     "title": "Extinction of light intensity in reception unit",
     "decomBlock": "Reception",
-    "description": "",
+    "description": "Intensity of incoming light being determined by its energy per time per cross sectional area. Thus, the structure of the reception unit itself may influence passing light.",
     "references": "[8, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 161]",
     "nodeType": "effect"
   },
