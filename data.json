@@ -337,7 +337,7 @@
     "parentIds": [],
     "title": "Vignetting: image darkening towards the edges",
     "decomBlock": "Detection identification",
-    "description": "",
+    "description": "Appearance of darker edges in recorded image in comparison to image center.",
     "references": "",
     "nodeType": "effect"
   },
@@ -355,7 +355,7 @@
     "parentIds": ["40"],
     "title": "Slow movement of particles",
     "decomBlock": "Signal propagation",
-    "description": "",
+    "description": "Surrounding particles moving slow with respect to the observer movement, other surrounding objects and corresponding recording settings.",
     "references": "[40, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 273]",
     "nodeType": "systemIndependent"
   },
@@ -364,7 +364,7 @@
     "parentIds": ["42"],
     "title": "Particle outline shapes are sharply resolved (instead of being blurred)",
     "decomBlock": "Reception",
-    "description": "",
+    "description": "Sharply pictured particle outline shapes in resulting image, no blurred representation of them.",
     "references": "[42, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 273]",
     "nodeType": "effect"
   },
@@ -373,7 +373,7 @@
     "parentIds": ["42"],
     "title": "Temporal averaging",
     "decomBlock": "Pre-processing",
-    "description": "",
+    "description": "Calculation of average values of scene-corresponding pixel data, obtained by multiple measurements.",
     "references": "[42, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 273]",
     "nodeType": "designParameter"
   },
@@ -382,7 +382,7 @@
     "parentIds": [],
     "title": "Artefacts",
     "decomBlock": "Detection identification",
-    "description": "",
+    "description": "Artefact being a general term for an undesired part/area in images which changes the appearance of recorded objects.",
     "references": "[42, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 273]",
     "nodeType": "effect"
   }
