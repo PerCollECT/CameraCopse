@@ -346,7 +346,7 @@
     "parentIds": ["39"],
     "title": "Particles in medium",
     "decomBlock": "Signal propagation",
-    "description": "",
+    "description": "Particles in atmospheric aerosol as well as accumulated hydrometeors to be considered. Aerosol being defined as “a mixture of particles (= extremely small pieces of matter) and the liquid or gas that they are contained in, that can spread through the air” [Aerosol. (n.d.). In Cambridge Dictionary. Retrieved June 21, 2021, from https://dictionary.cambridge.org/de/worterbuch/englisch/aerosol]. Hydrometeors being defined as “particulate solid and liquid formed principally by water” [Liberti G.L. (2014) Optical/Infrared, Scattering by Aerosols and Hydrometeors. In: Njoku E.G. (eds) Encyclopedia of Remote Sensing. Encyclopedia of Earth Sciences Series. Springer, New York, NY. https://doi.org/10.1007/978-0-387-36699-9_126]. Thus, including raindrops, ice grains, graupel, hailstones, snowflakes, fog droplets and spray droplets among others.",
     "references": "[39, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 273]",
     "nodeType": "systemIndependent"
   },
