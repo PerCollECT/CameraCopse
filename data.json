@@ -31,25 +31,25 @@
     "parentIds": [],
     "title": "Overexposure",
     "decomBlock": "Reception",
-    "description": "",
+    "description": "Overexposure of installed photosensor",
     "references": "",
     "nodeType": "effect"
   },
   {
     "id": "4",
-    "parentIds": ["5"],
+    "parentIds": ["5", "43"],
     "title": "Wave properties of light sources",
     "decomBlock": "Emission",
     "description": "Emitted radiation is being considered an electromagnetic wave, respectively a range of merged electromagnetic waves. Thus, it is being determined by corresponding wave properties such as wavelength, amplitude, phase, polarization and direction of propagation.",
-    "references": "[5, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 161]",
+    "references": "[5, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 161] [43, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 161]",
     "nodeType": "systemIndependent"
   },
   {
     "id": "5",
     "parentIds": ["7"],
-    "title": "Light of some source is more polarized or coherent than expected",
+    "title": "Source emitting polarized light",
     "decomBlock": "Emission",
-    "description": "",
+    "description": "Light, or more general radiation, of some source is being polarized. Thus, amplitudes of light/radiation waves pointing towards specific angular directions.",
     "references": "[7, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 161]",
     "nodeType": "systemIndependent"
   },
@@ -76,7 +76,7 @@
     "parentIds": [],
     "title": "Underexposure",
     "decomBlock": "Reception",
-    "description": "",
+    "description": "Underexposure of installed photosensor",
     "references": "[]",
     "nodeType": "effect"
   },
@@ -92,9 +92,9 @@
   {
     "id": "10",
     "parentIds": ["12"],
-    "title": "Observer moves faster than expected",
+    "title": "Fast movement of observer",
     "decomBlock": "Reception",
-    "description": "",
+    "description": "Observer moving fast, relatively to observed scenery.",
     "references": "[12, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 904]",
     "nodeType": "systemIndependent"
   },
@@ -121,7 +121,7 @@
     "parentIds": [],
     "title": "Misdetections of objects",
     "decomBlock": "Object identification",
-    "description": "",
+    "description": "Misdetections considered to be erroneous object detections, regarding estimated states.",
     "references": "",
     "nodeType": "effect"
   },
@@ -155,9 +155,9 @@
   {
     "id": "17",
     "parentIds": [],
-    "title": "Distortion: scene geometry misinterpreted",
+    "title": "Scene geometry misinterpreted",
     "decomBlock": "Object identification",
-    "description": "",
+    "description": "Misinterpretation of recorded scene incl. contained objects.",
     "references": "[]",
     "nodeType": "effect"
   },
@@ -166,7 +166,7 @@
     "parentIds": ["19"],
     "title": "Spectrum of observer-optomechanics",
     "decomBlock": "Reception",
-    "description": "",
+    "description": "Spectrum referring to spectral responsiveness of observer-optomechanics.",
     "references": "[19, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954]",
     "nodeType": "designParameter"
   },
@@ -310,7 +310,7 @@
     "parentIds": ["19"],
     "title": "Spectrum of incoming radiation",
     "decomBlock": "Signal propagation",
-    "description": "",
+    "description": "Spectrum is defining the upper and lower boundary of wavelengths contained in radiation, while radiation is being considered to consist of a range of merged electromagnetic waves. Wavelength being “the distance, measured in the direction of propagation of a wave, between two successive points in the wave that are characterized by the same phase of oscillation“ [Wavelength. (n.d.). In Dictionary.com. Retrieved June 21, 2021, from https://www.dictionary.com/browse/wavelength]. Consideration of the spectrum received by observer-optomechanics in this case. ",
     "references": "[19, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954]",
     "nodeType": "systemIndependent"
   },
@@ -385,5 +385,14 @@
     "description": "Artefact being a general term for an undesired part/area in images which changes the appearance of recorded objects.",
     "references": "[42, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 273]",
     "nodeType": "effect"
+  },
+  {
+    "id": "43",
+    "parentIds": ["7"],
+    "title": "Source emitting coherent light",
+    "decomBlock": "Emission",
+    "description": "Light, or more general radiation, of some source is being coherent. In this context, temporal and spatial coherence being considered. Thus, multiple waves of emitted light/radiation having a temporally and spatially fixed collective phase.",
+    "references": "[7, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 161]",
+    "nodeType": "systemIndependent"
   }
 ]
