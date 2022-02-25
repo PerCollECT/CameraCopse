@@ -2,9 +2,9 @@
   {
     "id": "0",
     "parentIds": [],
-    "title": "False negative in object list",
+    "title": "False negative object",
     "decomBlock": "Object identification",
-    "description": "An object present in ground truth is not detected by the sensor" ,
+    "description": "An object present in ground truth is not detected by the sensor." ,
     "references": "",
     "nodeType": "effect"
   },
@@ -28,11 +28,11 @@
   },
   {
     "id": "3",
-    "parentIds": [],
+    "parentIds": ["0"],
     "title": "Overexposure",
     "decomBlock": "Reception",
-    "description": "Overexposure of installed photosensor",
-    "references": "",
+    "description": "Appearance of highly brightened image.",
+    "references": "[0, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 1145]",
     "nodeType": "effect"
   },
   {
@@ -76,7 +76,7 @@
     "parentIds": [],
     "title": "Underexposure",
     "decomBlock": "Reception",
-    "description": "Underexposure of installed photosensor",
+    "description": "Underexposure of installed photosensor.",
     "references": "[]",
     "nodeType": "effect"
   },
@@ -100,18 +100,18 @@
   },
   {
     "id": "11",
-    "parentIds": ["12"],
+    "parentIds": ["12", "3"],
     "title": "Exposure time",
     "decomBlock": "Reception",
     "description": "Temporal length of photosensor exposure.",
-    "references": "[12, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 904]",
+    "references": "[12, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 904] [3, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 1120; 1145]",
     "nodeType": "designParameter"
   },
   {
     "id": "12",
     "parentIds": ["13"],
     "title": "Motion blur",
-    "decomBlock": "Detection identification",
+    "decomBlock": "Reception",
     "description": "Fuzzy representation of objects in recorded image due to relative movement between observer and objects during exposure of the photosensor.",
     "references": "[13, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 904]",
     "nodeType": "effect"
@@ -147,7 +147,7 @@
     "id": "16",
     "parentIds": ["17"],
     "title": "Distortion: barrel or pincushion",
-    "decomBlock": "Detection identification",
+    "decomBlock": "Pre-processing",
     "description": "Recorded image being expanded or pulled together towards its center, resulting in a barrel- or pincushion-shaped appearance.",
     "references": "[17, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 982]",
     "nodeType": "effect"
@@ -264,7 +264,7 @@
     "id": "29",
     "parentIds": ["33"],
     "title": "Mirrored scene",
-    "decomBlock": "Reception",
+    "decomBlock": "Object identification",
     "description": "Mirrored scene reffering to the perception of extensively specular reflected portions of radiation creating the impression of a scene behind the mirroring surface.",
     "references": "[33, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706]",
     "nodeType": "effect"
@@ -335,9 +335,9 @@
   {
     "id": "37",
     "parentIds": [],
-    "title": "Vignetting: image darkening towards the edges",
-    "decomBlock": "Detection identification",
-    "description": "Appearance of darker edges in recorded image in comparison to image center.",
+    "title": "Vignetting",
+    "decomBlock": "Reception",
+    "description": "Image darkening towards the edges in comparison to image center.",
     "references": "",
     "nodeType": "effect"
   },
@@ -361,29 +361,11 @@
   },
   {
     "id": "40",
-    "parentIds": ["42"],
-    "title": "Particle outline shapes are sharply resolved (instead of being blurred)",
+    "parentIds": [],
+    "title": "Particle outline shapes are sharply resolved",
     "decomBlock": "Reception",
     "description": "Sharply pictured particle outline shapes in resulting image, no blurred representation of them.",
-    "references": "[42, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 273]",
-    "nodeType": "effect"
-  },
-  {
-    "id": "41",
-    "parentIds": ["42"],
-    "title": "Temporal averaging",
-    "decomBlock": "Pre-processing",
-    "description": "Calculation of average values of scene-corresponding pixel data, obtained by multiple measurements.",
-    "references": "[42, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 273]",
-    "nodeType": "designParameter"
-  },
-  {
-    "id": "42",
-    "parentIds": [],
-    "title": "Artefacts",
-    "decomBlock": "Detection identification",
-    "description": "Artefact being a general term for an undesired part/area in images which changes the appearance of recorded objects.",
-    "references": "[42, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 273]",
+    "references": "[]",
     "nodeType": "effect"
   },
   {
