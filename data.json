@@ -310,7 +310,7 @@
     "parentIds": ["19"],
     "title": "Spectrum of incoming radiation",
     "decomBlock": "Signal propagation",
-    "description": "Spectrum is defining the upper and lower boundary of wavelengths contained in radiation, while radiation is being considered to consist of a range of merged electromagnetic waves. Wavelength being “the distance, measured in the direction of propagation of a wave, between two successive points in the wave that are characterized by the same phase of oscillation“ [Wavelength. (n.d.). In Dictionary.com. Retrieved June 21, 2021, from https://www.dictionary.com/browse/wavelength]. Consideration of the spectrum received by observer-optomechanics in this case. ",
+    "description": "Spectrum is defining the upper and lower boundary of wavelengths contained in radiation, while radiation is being considered to consist of a range of merged electromagnetic waves. Wavelength being “the distance, measured in the direction of propagation of a wave, between two successive points in the wave that are characterized by the same phase of oscillation“ [Wavelength. (n.d.). In Dictionary.com. Retrieved June 21, 2021, from https://www.dictionary.com/browse/wavelength]. Consideration of the spectrum received by observer-optomechanics in this case.",
     "references": "[19, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954]",
     "nodeType": "systemIndependent"
   },
