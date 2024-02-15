@@ -6,7 +6,8 @@
     "decomBlock": "Object identification",
     "description": "An object present in ground truth is not detected by the sensor." ,
     "references": "",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Missed object identification", "Undetected object", "Failure to recognize", "Neglected positive", "Incomplete object detection", "Object oversight"]
   },
   {
     "id": "1",
@@ -15,7 +16,8 @@
     "decomBlock": "Signal propagation",
     "description": "Reflectance being a measure of the capability to reflect portions of incoming radiation while other portions are absorbed and/or transmitted.",
     "references": "[2, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706; 707]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Objects' reflectance", "Reflective properties of objects", "Objects' ability to reflect light", "Reflectivity of objects", "Objects' reflectance characteristics", "Reflecting behavior of objects"]
   },
   {
     "id": "2",
@@ -24,7 +26,8 @@
     "decomBlock": "Signal propagation",
     "description": "Short mutual distance between reflective object and observer.",
     "references": "[27, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706; 707] [28, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Reflective object near observer", "Object with reflective properties close to observer", "Reflecting object in proximity to observer", "Object reflecting signals close to the observer", "Reflective element near the observer", "Object with reflective characteristics near the observer"]
   },
   {
     "id": "3",
@@ -33,7 +36,8 @@
     "decomBlock": "Reception",
     "description": "Appearance of highly brightened image.",
     "references": "[0, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 1145]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Excessive exposure", "Overabundance of exposure", "Overextended light exposure", "Overexposure condition"]
   },
   {
     "id": "4",
@@ -42,7 +46,8 @@
     "decomBlock": "Emission",
     "description": "Emitted radiation is being considered an electromagnetic wave, respectively a range of merged electromagnetic waves. Thus, it is being determined by corresponding wave properties such as wavelength, amplitude, phase, polarization and direction of propagation.",
     "references": "[5, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 161] [43, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 161]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Characteristics of light source waves", "Wave behavior of illuminating sources", "Light source wave attributes", "Properties of light waves emitted by sources", "Wavelength", "Amplitude", "Phase", "Polarization", "Direction of propagation"]
   },
   {
     "id": "5",
@@ -51,7 +56,8 @@
     "decomBlock": "Emission",
     "description": "Light, or more general radiation, of some source is being polarized. Thus, amplitudes of light/radiation waves pointing towards specific angular directions.",
     "references": "[7, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 161]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Light source emitting polarized light", "Polarized light emission by source", "Emission of light with polarization by source", "Source with polarized light output", "Light source producing polarized illumination", "Generation of polarized light by light source"]
   },
   {
     "id": "6",
@@ -60,7 +66,8 @@
     "decomBlock": "Reception",
     "description": "Polarization filters being used to eliminate amplitudes of passing radiation, but only those whose angular directions deviate from a specific angle of the considered filter.",
     "references": "[7, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 161, Directional elimination of amplitudes leading to decreasing energy of passing radiation. Consequently, radiation intensity is being reduced.]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Observation using polarization filters", "Utilizing polarization filters", "Observational analysis with polarized light", "Employing polarizing filters for viewing", "Observing scenes through polarization filters", "Polarization-filter-assisted observation"]
   },
   {
     "id": "7",
@@ -69,7 +76,8 @@
     "decomBlock": "Reception",
     "description": "Intensity of incoming radiation being determined by its energy per duration per cross sectional area. Thus, the structure of the reception unit itself may influence passing radiation.",
     "references": "[8, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 161]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Diminishing light intensity in reception unit", "Reduction in received light intensity", "Light intensity fading in reception unit", "Weakening of received light intensity", "Loss of light intensity in reception unit", "Diminished illumination in reception unit"]
   },
   {
     "id": "8",
@@ -78,7 +86,8 @@
     "decomBlock": "Reception",
     "description": "Underexposure of installed photosensor.",
     "references": "[]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Insufficient exposure", "Inadequate light exposure", "Underextended light exposure", "Underexposure condition", "Low light exposure"]
   },
   {
     "id": "9",
@@ -87,7 +96,8 @@
     "decomBlock": "Reception",
     "description": "Spatial position of observer-optomechanics in surrounding area, which is to be recorded.",
     "references": "[10, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 904]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Observer-optomechanics viewing position", "Position from which observer-optomechanics view", "Observer-optomechanics perspective", "Observation angle of observer-optomechanics", "Viewing stance of observer-optomechanics", "Observer-optomechanics sightline"]
   },
   {
     "id": "10",
@@ -96,7 +106,8 @@
     "decomBlock": "Reception",
     "description": "Observer moving fast, relatively to observed scenery.",
     "references": "[12, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 904]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Observer in rapid motion", "Swift movement of observer", "Quick-paced observer motion", "High-speed observer movement", "Observer moving rapidly", "Fast-paced observer"]
   },
   {
     "id": "11",
@@ -105,7 +116,8 @@
     "decomBlock": "Reception",
     "description": "Temporal length of photosensor exposure.",
     "references": "[12, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 904] [3, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 1120; 1145]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Time of exposure", "Duration of exposure", "Exposure period", "Timeframe of sensor exposure", "Length of exposure time", "Interval of exposure"]
   },
   {
     "id": "12",
@@ -114,7 +126,8 @@
     "decomBlock": "Reception",
     "description": "Fuzzy representation of objects in recorded image due to relative movement between observer and objects during exposure of the photosensor.",
     "references": "[13, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 904]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Blurring due to motion", "Motion-induced blur", "Blur caused by movement", "Blurred effect from motion", "Blurring as a result of motion", "Motion-related blur"]
   },
   {
     "id": "13",
@@ -123,7 +136,8 @@
     "decomBlock": "Object identification",
     "description": "Misdetections considered to be erroneous object detections, regarding estimated states.",
     "references": "",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Incorrect object detections", "Faulty object recognition", "Erroneous object detections regarding estimated states", "Misjudgments in object detection"]
   },
   {
     "id": "14",
@@ -132,7 +146,8 @@
     "decomBlock": "Reception",
     "description": "Spatial structure of the lenses installed in considered observer-optomechanics.",
     "references": "[15, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 982; 983]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Optical lens geometry in observer-optomechanics", "Lenses' spatial design"]
   },
   {
     "id": "15",
@@ -141,7 +156,8 @@
     "decomBlock": "Reception",
     "description": "High level of convex or concave curvature of lens surfaces.",
     "references": "[16, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 982] [37, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 983]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Highly curved surfaces of lenses", "Intensely curved lense surfaces", "Strong curvature of lens surfaces", "Exaggerated curvature in lens design", "Deeply curved lens exteriors", "High degree of curvature in lens surfaces"]
   },
   {
     "id": "16",
@@ -150,7 +166,8 @@
     "decomBlock": "Pre-processing",
     "description": "Recorded image being expanded or pulled together towards its center, resulting in a barrel- or pincushion-shaped appearance.",
     "references": "[17, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 982]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Distortion type: Barrel or Pincushion", "Barrel or Pincushion distortion", "Distorted shape: Barrel or Pincushion", "Barrel or Pincushion distortion effect", "Distorted appearance: Barrel or Pincushion", "Type of distortion: Barrel or Pincushion"]
   },
   {
     "id": "17",
@@ -159,7 +176,8 @@
     "decomBlock": "Object identification",
     "description": "Misinterpretation of recorded scene incl. contained objects.",
     "references": "[]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Misinterpretation of scene geometry", "Inaccurate interpretation of spatial layout", "Incorrect scene geometry analysis", "Faulty interpretation of spatial arrangement", "Misreading of scene geometry"]
   },
   {
     "id": "18",
@@ -168,7 +186,8 @@
     "decomBlock": "Reception",
     "description": "Spectrum referring to spectral responsiveness of observer-optomechanics.",
     "references": "[19, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Spectral characteristics of observer-optomechanics", "Wavelength spectrum of observer-optomechanics", "Optical system spectrum", "Spectral responsiveness of observer-optomechanics"]
   },
   {
     "id": "19",
@@ -177,7 +196,8 @@
     "decomBlock": "Reception",
     "description": "Different wavelengths of radiation get refracted in different degrees when they are being non-orthogonally transmitted through a medium whose optical density differs from the optical density of the surrounding media. Thus, after leaving a transmitted lens, fractions of radiation of smaller wavelengths are pointing towards different directions than fractions of larger wavelengths.",
     "references": "[20, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Selective transmission of spectrum parts to various locations", "Distribution of spectrum components to different areas", "Transmitting distinct spectrum sections to diverse positions", "Spectrum division to multiple locations", "Separation of spectrum parts to varied positions", "Distribution of spectrum across different locations"]
   },
   {
     "id": "20",
@@ -186,7 +206,8 @@
     "decomBlock": "Reception",
     "description": "Chromatic aberration being the appearance of a distributed wavelength spectrum (or colour spectrum in case of visible radiation) instead of a pointwise merge of wavelengths/colours within a resulting image. When radiation, which is consisting of a range of merged electromagnetic waves of different wavelengths, is being transmitted by a lens then it may experience a wavelength-dependent refraction of its components. Thus, merged wavelengths are being devided into their wavelength components which are then spatially pointing towards slightly different locations on the photosensor and thereafter being recognized by multiple pixels.",
     "references": "[35, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Chromatic aberration in observer-optomechanics", "Color distortion in optical system", "Chromatic distortion in lens system", "Achromatism in observer-optomechanics", "Color aberration in optical design", "Color dispersion in observer-optomechanics"]
   },
   {
     "id": "21",
@@ -195,7 +216,8 @@
     "decomBlock": "Detection identification",
     "description": "Identification of object part edges in resulting image being disturbed.",
     "references": "",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Difficulty in detecting edges", "Challenges in identifying edges", "Problems with edge detection", "Hindrances to edge detection"]
   },
   {
     "id": "22",
@@ -204,7 +226,8 @@
     "decomBlock": "Reception",
     "description": "The quality of observer-electronics is being considered to declare the degree of homogeneity and robustness of materials which are installed in observer-electronics as well as the level of reliable mutual interaction and the choice of the materials itself.",
     "references": "[23, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 1219]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Performance quality of observer-electronics", "Overall excellence of observer-electronics", "Quality of electronic components in observer system", "Electronics reliability in observer-optomechanics", "Observer-electronics excellence", "Quality standards of observer-electronics"]
   },
   {
     "id": "23",
@@ -213,7 +236,8 @@
     "decomBlock": "Reception",
     "description": "Noise induced by spontaneous generation of free charge carriers due to thermal excitement of valence electrons within semiconductors of the photodiodes without exposal to radiation.",
     "references": "[24, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 1219]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Noise due to thermal effects in pixels", "Pixel noise caused by thermal conditions", "Thermal impact on pixel noise", "Pixel noise induced by temperature", "Noise in pixels due to thermal variations", "Thermal-related pixel noise"]
   },
   {
     "id": "24",
@@ -222,7 +246,8 @@
     "decomBlock": "Reception",
     "description": "Decreasing differences in bightness levels within a ressulting picture and, thus, less distinctness between bright and dark areas.",
     "references": "[25, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 1219]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Reduced contrast levels", "Lowered contrast in visual output", "Diminished contrast between elements", "Decreased visual contrast", "Weakened contrast in scene perception"]
   },
   {
     "id": "25",
@@ -231,16 +256,18 @@
     "decomBlock": "Detection identification",
     "description": "Details which are small regarding the size of an image are not detected.",
     "references": "",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Undetected small image details", "Missed detection of fine details", "Inability to recognize small details"]
   },
-    {
+  {
     "id": "26",
     "parentIds": ["2"],
     "title": "Distance between reflective object and observer",
     "decomBlock": "Signal propagation",
     "description": "Mutual distance between observed reflective object and observing sensor.",
     "references": "[2, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706; 707]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Separation between reflective object and observer", "Distance from observer to reflective object", "Spatial gap between observer and reflective object", "Extent between observer and reflective element", "Range from observer to reflective object"]
   },
   {
     "id": "27",
@@ -249,7 +276,8 @@
     "decomBlock": "Reception",
     "description": "Reflected radiation getting brighter, whereby brightness in this sense describes the intensity of radiation received by observer.",
     "references": "[29, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706] [3, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 707]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Rising reflection brightness", "Elevated intensity of reflected light", "Increasing luminosity of reflection", "Upward trend in reflection brightness", "Growing brightness in reflected light", "Increasing intensity of radiation received by observer"]
   },
   {
     "id": "28",
@@ -258,7 +286,8 @@
     "decomBlock": "Reception",
     "description": "Area of a single reflective surface getting bigger in the field of view of an observer.",
     "references": "[29, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Growing size of reflection", "Increasing scale of reflected light", "Enlarging size of reflection"]
   },
   {
     "id": "29",
@@ -267,7 +296,8 @@
     "decomBlock": "Object identification",
     "description": "Mirrored scene reffering to the perception of extensively specular reflected portions of radiation creating the impression of a scene behind the mirroring surface.",
     "references": "[33, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 706]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Impression of scene behind mirrored elements", "Reflections creating mirrored scene", "Mirrored characteristics"]
   },
   {
     "id": "30",
@@ -276,7 +306,8 @@
     "decomBlock": "Reception",
     "description": "Spatial resolution of pixel-array being defined by number of pixels per area unit and determined by number of horizontal and vertical pixels per row/column in case of a rectangular arrangement.",
     "references": "[31, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 1175]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Resolution of pixel-array", "Number of pixels per area unit", "Spatial definition in observer-electronics pixel-array"]
   },
   {
     "id": "31",
@@ -285,7 +316,8 @@
     "decomBlock": "Reception",
     "description": "Change of pixel sizes and/or positions on a regular base over the view of the considered pixel-array.",
     "references": "[32, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 1175]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Regular changes in pixel size/position", "Consistent alterations in pixel dimensions/position", "Systematic variations in pixel size/position", "Changes in pixel characteristics"]
   },
   {
     "id": "32",
@@ -294,7 +326,8 @@
     "decomBlock": "Pre-processing",
     "description": "The formation (incl. aspect-ratio, if applicable) of a pixel-array determines the area of a captured scene, whereby pixel values are later being sampled and transformed into an image, maintaining the formation of the recording array. The present effect considers the sampling and transformation of a scene area into an imaging area while the scene area, which depends on the formation of the recording pixel-array, is partially not matching the imaging area.",
     "references": "[16, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 1175]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Diverse sampling sizes in sensor", "Varying image area proportions in sensor", "Inconsistent sampling sizes in sensor", "Non-uniform sampling sizes in sensor"]
   },
   {
     "id": "33",
@@ -303,7 +336,8 @@
     "decomBlock": "Object identification",
     "description": "An object not present in ground truth is detected by the sensor.",
     "references": "",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Incorrect object identification", "Spurious object detection", "Mistaken positive object", "False alarm", "Inaccurate positive identification", "Signal misinterpretation"]
   },
   {
     "id": "34",
@@ -312,16 +346,18 @@
     "decomBlock": "Signal propagation",
     "description": "Spectrum is defining the upper and lower boundary of wavelengths contained in radiation, while radiation is being considered to consist of a range of merged electromagnetic waves. Wavelength being “the distance, measured in the direction of propagation of a wave, between two successive points in the wave that are characterized by the same phase of oscillation“ [Wavelength. (n.d.). In Dictionary.com. Retrieved June 21, 2021, from https://www.dictionary.com/browse/wavelength]. Consideration of the spectrum received by observer-optomechanics in this case.",
     "references": "[19, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Radiation spectrum", "Incoming radiation wavelength distribution", "Spectral characteristics of incoming radiation", "Wavelength spectrum of received radiation", "Radiation signal spectrum"]
   },
   {
-  "id": "35",
-  "parentIds": ["21", "36"],
-  "title": "Coloured edges",
-  "decomBlock": "Detection identification",
-  "description": "Appearance of multiple colours at edges of pictured objects.",
-  "references": "[21, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954] [36, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954]",
-  "nodeType": "effect"
+    "id": "35",
+    "parentIds": ["21", "36"],
+    "title": "Coloured edges",
+    "decomBlock": "Detection identification",
+    "description": "Appearance of multiple colours at edges of pictured objects.",
+    "references": "[21, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954] [36, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 954]",
+    "nodeType": "effect",
+    "tags": ["Edges with multiple colours", "Colored outlines in image", "Edges exhibiting colors", "Colorized borders in visual output", "Hues in edge representation", "Chromatic edges"]
   },
   {
     "id": "36",
@@ -330,7 +366,8 @@
     "decomBlock": "Detection identification",
     "description": "Segmentation of objects in resulting image being disturbed.",
     "references": "",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Impaired segmentation process", "Difficulties in segmenting elements", "Challenges in separating image components", "Hindrances to effective segmentation", "Segmentation difficulties"]
   },
   {
     "id": "37",
@@ -339,7 +376,8 @@
     "decomBlock": "Reception",
     "description": "Image darkening towards the edges in comparison to image center.",
     "references": "",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Shading at edges in observer-electronics", "Darkening at periphery in visual output", "Edge shading in observer-optomechanics", "Obscuring of corners in visual display", "Diminished brightness at the borders"]
   },
   {
     "id": "38",
@@ -348,7 +386,8 @@
     "decomBlock": "Signal propagation",
     "description": "Particles in atmospheric aerosol as well as accumulated hydrometeors to be considered. Aerosol being defined as “a mixture of particles (= extremely small pieces of matter) and the liquid or gas that they are contained in, that can spread through the air” [Aerosol. (n.d.). In Cambridge Dictionary. Retrieved June 21, 2021, from https://dictionary.cambridge.org/de/worterbuch/englisch/aerosol]. Hydrometeors being defined as “particulate solid and liquid formed principally by water” [Liberti G.L. (2014) Optical/Infrared, Scattering by Aerosols and Hydrometeors. In: Njoku E.G. (eds) Encyclopedia of Remote Sensing. Encyclopedia of Earth Sciences Series. Springer, New York, NY. https://doi.org/10.1007/978-0-387-36699-9_126]. Thus, including raindrops, ice grains, graupel, hailstones, snowflakes, fog droplets and spray droplets among others.",
     "references": "[39, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 273]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Particles within medium", "Presence of particles in the medium", "Particle content", "Particles dispersed in medium", "Medium with particulate matter", "Existence of particles", "Weather phenomena", "Precipitation", "Rain", "Raindrops", "Ice grains", "Graupel", "Hailstones", "Snowflakes", "Fog droplets", "Spray droplets"]
   },
   {
     "id": "39",
@@ -357,7 +396,8 @@
     "decomBlock": "Signal propagation",
     "description": "Surrounding particles moving slow with respect to the observer movement, other surrounding objects and corresponding recording settings.",
     "references": "[40, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 273]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Particles moving at a slow pace", "Gradual movement of particles", "Slow-motion particle motion", "Particles with low velocity", "Leisurely movement of particles", "Slow movement of medium particles"]
   },
   {
     "id": "40",
@@ -366,7 +406,8 @@
     "decomBlock": "Reception",
     "description": "Sharply pictured particle outline shapes in resulting image, no blurred representation of them.",
     "references": "[]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Sharp resolution of particle outlines", "Clear depiction of particle contours", "Distinct representation of particle boundaries", "Sharp visualization of particle outlines", "Well-defined shapes of particles in output"]
   },
   {
     "id": "43",
@@ -375,6 +416,7 @@
     "decomBlock": "Emission",
     "description": "Light, or more general radiation, of some source is being coherent. In this context, temporal and spatial coherence being considered. Thus, multiple waves of emitted light/radiation having a temporally and spatially fixed collective phase.",
     "references": "[7, Vitro, CV-HAZOP Checklist, https://vitro-testing.com/cv-hazop/, Risk Id 161]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Light source emitting coherent light", "Coherent light emission by source", "Source with coherent light output", "Light source producing coherent illumination", "Generation of coherent light by light source"]
   }
 ]
